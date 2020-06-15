@@ -10,6 +10,7 @@ body {
   z-index: -1;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0px;
 }
 
 .heading {
@@ -42,4 +43,104 @@ body {
 }
 
 .form-group {
+  font-size: 17px;
+  padding: 0px 0px 15px 0px;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  color: #495057;
+  width: 100%;
+  line-height: 2;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px #CED4DA;
+  padding: 5px 0px 5px 10px;
+  margin: 8px 0px 10px 0px;
+}
+
+::placeholder {
+  color: #585858;
+}
+
+.clue {
+  font-size: 14px;
+}
+
+.selector {
+  font-family: inherit;
+  font-size: 16px;
+  color: #495057;
+  width: 100%;
+  line-height: 2;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px #CED4DA;
+  padding: 8px 10px 8px 10px;
+  margin:
+}
+
+p {
+  margin: 10px 0px 8px 0px;
+}
+
+.radio-label {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.input-radio {
+  position: relative;
+  margin: 0px 10px 0px 0px;
+  height: 18px;
+  width: 18px;
+  top: 2px;
+  border-radius: 50%;
+}
+
+.check-label {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.input-check {
+  position: relative;
+  margin: 0px 10px 0px 0px;
+  min-height: 18px;
+  min-width: 18px;
+  top: 3px;
+  margin: 0px 5px 10px 0px;
+}
+
+.input-check:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+.textbox {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-height: 120px;
+  line-height: 2;
+  font-size: 16px;
+  padding: 5px 0px 8px 10px;
+  margin: 0px;
+}
+
+.button-submit {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  background-color: #37AF65;
+  border: #37AF65;
+  padding: 8px 0px 8px 0px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  box-shadow: 0px 0px 10px black;
+  border-width: 10px;
+  border-style: solid;
+  border: black;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 }

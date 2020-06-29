@@ -22,6 +22,18 @@
 
   <style>
 
+    :root{ /* declaration of CSS variables (default values) */ 
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    img{
+      padding: var(--spacing); /* using the variable --spacing (var(...) is needed) */
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
     /*
       misc styles, nothing to do with CSS variables
     */
@@ -35,6 +47,10 @@
       font-size: 50px;
     }
 
+    .hl{
+      color: var(--base);
+    }
+
     .controls {
       margin-bottom: 50px;
     }
@@ -45,6 +61,18 @@
   </style>
 
   <script>
+
+    const inputs = document.querySelectorAll(".controls input"); // creates a Node List, which is similar to an Array but has less base methods. Can use forEach()
+
+    function handleUpdate(){
+      const suffix = this.dataset.sizing || ""; // this.dataset takes every created attribute within the tag beginning with "data-" and puts it into an object
+      //console.log(this.name); // input's name attribute's value
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix); // `--${this.name}` is the property (variable) being changed, "this.value + suffix" is what the variable is changing to. "this.value" changes based on the event status (range slider)
+    }
+
+    inputs.forEach(input => input.addEventListener("change", handleUpdate)); // For each input in inputs, listen for a change event and then call handleUpdate
+    inputs.forEach(input => input.addEventListener("mousemove", handleUpdate)); // event occurs when mouse moves over the element
+
   </script>
 
 </body>

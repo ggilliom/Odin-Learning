@@ -1,5 +1,9 @@
 # Odin-Learning
 Odin Projects/Assignments
 
-1. Tribute Page
-2. Survey Form
+Project List:
+
+Tribute Page
+Survey Form
+JavaScript 30 (mini projects within here)
+Rails apps (cars, blog)
